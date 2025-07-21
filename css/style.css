@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto";
+    background-color: #1e2a38;
+    color: #f5f5f5;
+}
+
+header, section {
+    margin: 2rem auto;
+}
+
+header {
+    text-align: center;
+    font-size: 2rem;
+}
+
+thead h1 {
+    font-size: 3rem;
+}
+
+thead h2 {
+    font-size: 2rem;
+}
+
+tbody h3 {
+    font-size: 1.75rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a :hover {
+    transition: color 100ms ease-in;
+    color: #00bcd4;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+th, td {
+    text-align: center;
+    border: 1px solid #00bcd4;
+    padding: 1rem;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
