@@ -28,6 +28,12 @@ thead h2 {
     font-size: 2rem;
 }
 
+tbody tr:hover {
+    background-color: #2f4050;
+    color: #fff;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
 tbody h3 {
     font-size: 1.75rem;
 }
@@ -35,18 +41,44 @@ tbody h3 {
 a {
     text-decoration: none;
     color: inherit;
+    position: relative;
+    transition: color 0.2s ease-in-out;
+    display: inline-block;
 }
 
-a :hover {
-    transition: color 100ms ease-in, text-decoration 100ms ease-in;
+a:hover {
     color: #00bcd4;
-    text-decoration: underline;
+}
+
+a:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #00bcd4;
+    transition: width 0.2s ease-in-out;
+}
+
+a:hover:after {
+    width: 100%;
 }
 
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
-    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 th, td {
@@ -60,4 +92,5 @@ section {
     justify-content: center;
     margin: 2rem auto;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
