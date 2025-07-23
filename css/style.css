@@ -94,3 +94,32 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
+
+.back-button {
+    display: inline-block;
+    background-color: #00bcd4;
+    color: #1e2a38;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 2rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 188, 212, 0.3);
+}
+
+.back-button:hover {
+    background-color: #0097a7;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 188, 212, 0.4);
+    color: #fff;
+}
+
+.back-button:after {
+    display: none;
+}
+
+.back-button-container {
+    text-align: center;
+    margin: 1rem 0;
+}
